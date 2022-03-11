@@ -4,8 +4,6 @@ import { Heading, Page, TextStyle, Layout, EmptyState} from "@shopify/polaris";
 const img = 'https://cdn.shopify.com/s/files/1/0757/9955/files/empty-state.svg';
 
 export default function Index() {
-  state = { open: false };
-  render() {
     return (
       <Page>
         <Layout>
@@ -21,8 +19,7 @@ export default function Index() {
           </EmptyState>
         </Layout>
       </Page>
-    )
-  }
+    );
 };
 
 
