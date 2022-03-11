@@ -1,17 +1,29 @@
-import { Heading, Page } from "@shopify/polaris";
+import React from 'react';
+import { Heading, Page, TextStyle, Layout, EmptyState} from "@shopify/polaris";
 
-export default function Index() {
-  return (
-    <Page>
-      <Heading>
-        Shopify app with Node and React{" "}
-        <span role="img" aria-label="tada emoji">
-          🎉
-        </span>
-      </Heading>
-    </Page>
-  );
-}
+const img = 'https://cdn.shopify.com/s/files/1/0757/9955/files/empty-state.svg';
+
+class Index extends React.Component {
+  state = { open: false };
+  render() {
+    return (
+      <Page>
+        <Layout>
+          <EmptyState // Empty state component
+            heading="Create Product Options"
+            action={{
+              content: 'Select products',
+              onAction: () => this.setState({ open: true }),
+            }}
+            image={img}
+          >
+            <p>Select products to add options and variants.</p>
+          </EmptyState>
+        </Layout>
+      </Page>
+    )
+  }
+};
 
 
 
