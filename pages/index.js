@@ -3,7 +3,7 @@ import { Heading, Page, TextStyle, Layout, EmptyState} from "@shopify/polaris";
 
 const img = 'https://cdn.shopify.com/s/files/1/0757/9955/files/empty-state.svg';
 
-class Index extends React.Component {
+export default function Index() {
   state = { open: false };
   render() {
     return (
