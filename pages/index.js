@@ -21,13 +21,14 @@ export default function Index() {
               you would create a single product for the hat, and an additional product for the bedazzle add on.</p>
             <b>
             <p>3. Now it's time to group your products into a collection. Create a new collection using shopifys built in collection maker and title it after your base product, for example the hat collection. 
-              See this tutorial on creating a new collection: https://help.shopify.com/en/manual/products/collections
-
-
-            <p>To create a set of product options, first create a base product, and then an additional product for every option using shopifys default product maker. Feel free to include additional variants on all these products. </p>
-<p>Once you have all your options created, create a new collection under the same name as your base product and add all your newly created products to the collection.</p>
-<p>Now all the products in that collection will be displayed on the base products page, customers will be able to add and remove options from their carts and see the price update as they do!</p>
-          </EmptyState>
+              See this tutorial on creating a new collection: https://help.shopify.com/en/manual/products/collections. After you've created the collection, add the base product and all the options
+              to the collection by going to the product detail page, and adding each product to the collection. </p>
+             <b>
+             <p> Thats it! Now that all your options have been added to the collection, they should all be visible as add-ons on the storefront product page. 
+             From there your customers will be able to add and remove add-ons to the cart as they like and the price will be reflected accordingly. </p> 
+                
+            
+         </EmptyState>
         </Layout>
       </Page>
     );
